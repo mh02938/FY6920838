@@ -82,7 +82,7 @@
       Radar Absorbing Materials
     </h3>
     <p class="ex1">
-      <pre>
+      <pre id="RAMs_InText">
         The first of the main radar countermeasures aboard the F35 is the material that coats its outer layer. Whilst the specific material used to coat the fuselage of the F35 has not been publicly disclosed, we do know that it is a type of radar absorbent material (RAM). To understand how RAM works we must first understand how radar works: a simple radar station consists of a electromagnetic (EM) wave transmitter and receiver, it sends out a wave at a known speed and waits for it to return, if the wave returns to the receiver then the radar know it was reflected by another object and uses the speed of the radio wave and the time it took from when the wave was transmitted to when it was received to calculate the how far away the object is. The RAM coating on the F35 absorbs a high proportion of these waves and converts them into heat energy which is dissipated throughout the airframe of the aircraft, meaning that very little EM waves are reflected back to the radar receiver.
       </pre>
     </p>
@@ -167,7 +167,7 @@
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const RAMsCount = displayWordCount("RAMs_InText");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
