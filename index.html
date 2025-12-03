@@ -110,8 +110,22 @@
       Airframe Design
     </h3>
     <p class="ex1">
-      <pre>
-        Airframe Design...
+      <pre id="AD_InText">
+        Another important feature of the F35 Lightning II that allows it to remain virtually
+        undetected by radar is the design of its airframe. One feature of the aircraft’s airframe is 
+        the use of planform alignment, this is where the edges of the wings and tail are swept back 
+        at the same angles, allowing the incident radar energy to be directed away from the source 
+        and into empty space where it won’t be detected (Ali and Chadwick, 2016). In addition, unlike 
+        older stealth aircraft like the F117, the F35’s fuselage features smooth curved facets along 
+        its surface (Hayward, 2024) oriented to reflect radar waves away from their source 
+        (Allinair, 2025). Another design feature is the internal weapons bay which houses the 
+        missiles and bombs (Hayward, 2024), if these weapons were mounted on the outside of the 
+        aircraft this could cause excess reflection of incident radar energy and in turn give the 
+        aircraft a larger radar cross-section (Allinair, 2025). As well as avoiding radar detection, 
+        stealth aircraft must also avoid infrared and optical detection, the main source of heat on 
+        any aircraft is the engine, the F35 uses a diverter nozzle and advanced cooling systems 
+        (Hayward, 2024) designed by Pratt and Whitney (Hina Dinoo, 2025) to reduce the amount of heat
+        energy emitted.
       </pre>
     </p>
     <h3 id="References">
@@ -124,11 +138,26 @@
         
         Mouritz, A.P. (2012). Introduction to Aerospace Materials. Cambridge, Uk: Woodhead Pub.
         
-        Newdick, T. (2022). The F-35C’s Radar-Absorbent Skin Is Looking Pretty Rough After Months At
-        Sea. [online] The War Zone. Available at: https://www.twz.com/44067/the-f-35cs-radar-absorbent-skin-is-looking-pretty-rough-after-months-at-sea.
+        Newdick, T. (2022). The F-35C’s Radar-Absorbent Skin Is Looking Pretty Rough After Months At 
+        Sea. [online] The War Zone. Available at: 
+        https://www.twz.com/44067/the-f-35cs-radar-absorbent-skin-is-looking-pretty-rough-after-months-at-sea.
         
-        Axe, D. (2012). Lockheed’s Dubious Claim: Stealth Fighter Will Get Stealthier With Age. [online] WIRED. Available at: 
-        https://www.wired.com/2012/11/f-35-gets-stealthier/ [Accessed 2 Dec. 2025].
+        Axe, D. (2012). Lockheed’s Dubious Claim: Stealth Fighter Will Get Stealthier With Age. [online] 
+        
+        WIRED. Available at: https://www.wired.com/2012/11/f-35-gets-stealthier/ [Accessed 2 Dec. 2025].
+        
+        Ali, U. and Chadwick, E. (2016). Flow Control and High-Lift Performance  for Flying-Wing Unmanned 
+        Combat Air  Vehicle Configurations by Inserting Slots. Int. Jnl. of Multiphysics, 10(2).
+        
+        Allinair. (2025). The Science of Stealth: How Aircraft Avoid Radar Detection - Allinair. [online] Available at: 
+        https://allinair.com/the-science-of-stealth-how-aircraft-avoid-radar-detection/?utm_source=chatgpt.com [Accessed 2 Dec. 2025].
+        
+        Hayward, J. (2024). Almost Undetectable: What Gives The F-35 Fighter Jet Stealth? [online] Simple Flying. Available at: 
+        https://simpleflying.com/f-35-fighter-jet-stealth-guide/.
+        
+        Hina Dinoo (2025). ‘We Can Strike Anywhere Without Being Detected’: Pratt & Whitney Unveils Most Advanced Fighter Jet Engine 
+        With Revolutionary Stealth Technology. [online] Sustainability Times. Available at: 
+        https://www.sustainability-times.com/energy/we-can-strike-anywhere-without-being-detected-pratt-whitney-unveils-most-advanced-fighter-jet-engine-with-revolutionary-stealth-technology/#google_vignette [Accessed 3 Dec. 2025].
 
       </pre>
     </p>
@@ -206,8 +235,9 @@
       // Calculate word count for each section and accumulate the total
       const IntroductionCount = displayWordCount("Introduction_InText");
       const RAMsCount = displayWordCount("RAMs_InText");
+      const ADCount = displayWordCount("AD_InText");
       // Calculate the sum of all selected sections
-      const totalWordCount = IntroductionCount + RAMsCount;
+      const totalWordCount = IntroductionCount + RAMsCount + ADCount;
       // Display the total word count
       document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
     }
